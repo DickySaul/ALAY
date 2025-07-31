@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dancing Script', cursive;
+  background: radial-gradient(circle at top, #ffe6f0, #ffd1dc);
+  overflow: hidden;
+  height: 100vh;
+}
+
+.slide {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.show {
+  display: flex;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.img-slide, .img-envelope {
+  width: 20%;
+  max-width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+  transition: transform 0.6s;
+  height: auto;
+}
+
+.img-envelope.opened {
+  transform: rotateX(180deg);
+}
+
+button {
+  padding: 12px 28px;
+  background-color: #ff69b4;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #e055a2;
+  transform: scale(1.05);
+}
+
+.judul {
+  font-size: 28px;
+  color: #d63384;
+  margin-bottom: 20px;
+}
+
+.besar {
+  font-size: 36px;
+}
+
+.pesan {
+  font-size: 20px;
+  max-width: 90%;
+  color: #444;
+}
+
+.galeri img {
+  width: 100px;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url('https://cdn.pixabay.com/photo/2017/01/31/19/10/heart-2027040_960_720.png') repeat;
+  animation: hearts 20s linear infinite;
+  opacity: 0.1;
+}
+
+@keyframes hearts {
+  0% { background-position: 0 0; }
+  100% { background-position: 1000px 1000px; }
+}

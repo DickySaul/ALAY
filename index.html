@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Girlfriend Day</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Musik -->
+  <audio id="bgMusic" src="blue.mp3" loop></audio>
+
+
+
+  <!-- Efek Partikel Hati -->
+  <div id="hearts"></div>
+
+  <!-- Slide 1 -->
+  <div class="slide show" id="slide1">
+    <img src="kucing.webp" class="img-kucing" alt="Foto Romantis"style="width: 200px; height: auto;" />
+    <h1 class="judul">Happy National Girlfriend Day 💖</h1>
+    <button onclick="starmusicandanext(2);">Lanjut Cantikk 💕</button>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide" id="slide2">
+    <img src="5.png" class="5" id="envelope" alt="Amplop"style="width: 200px; height: auto;" />
+    <h2 class="judul">Pesan Perasaan ✉️</h2>
+    <button onclick="bukaAmplop()">Baca Pesan 💌</button>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="slide" id="slide3">
+    <h2 class="judul">Jika Ingin Baca silahkan Tekan Tombol Unduh Dibawa "DISCLAIMERR RESIKO KEGELIAN SAAT MEMBACA DITANGGUNG MASING-MASING"💗</h2>
+    <p class="pesan" id="pesanCinta"></p>
+    <button onclick="downloadPesan()">Unduh Pesan ❤️</button>
+    <button onclick="nextSlide(4)">Lanjut ➡️</button>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="slide" id="slide4">
+    <h2 class="judul">Best Momentt 📸</h2>
+    <div class="galeri">
+      <img src="k1.png"style="width: 300px; height: auto;" />
+      <img src="k2.png"style="width: 300px; height: auto;" />
+      <img src="k3.png"style="width: 300px; height: auto;" />
+      <img src="k4.png"style="width: 300px; height: auto;" />
+    </div>
+    <button onclick="nextSlide(5)">Slide Terakhir 💞</button>
+  </div>
+
+  <!-- Slide 5 -->
+  <div class="slide" id="slide5">
+    <h2 class="judul besar">Last 💘</h2>
+    <p class="pesan">
+      Mungkin kamu Sudah Bosan mendengarnya....<br>
+       Tapi Aku Tidak Bosan Mengucapkannya I Really-realyy Love Youuu😚
+    </p>
+    <button onclick="nextSlide(1)">Balik ke Awal 🔁</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
